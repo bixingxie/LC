@@ -16,7 +16,7 @@ Looks like a DFS problem as at each position there are 4 choices:
 ### Tips/Edge Cases 
 * Need to keep track of the previous operand because of multiplication. 
 * Be careful of the operator precedence. (e.g. `3+4*2` should be evaluated as `11`, not `14`). 
-* Need to handle cases such as `"503", where `"03"` is not a valid operand itself. 
+* Need to handle cases such as `"503"`, where `"03"` is not a valid operand itself. 
 
 ### Code 
 ```python3
@@ -56,4 +56,5 @@ def addOperators(self, num, target):
 
 ### Time/ Complexities 
 Time: O(4^N) as at each position of the input string, there are 4 possibilities. 
+
 Space: O(N) as the depth of the recursion stack would be the length of the input string. 
