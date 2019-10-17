@@ -45,7 +45,7 @@ def addOperators(self, num, target):
                         dfs(j+1, val+curr_val, curr_val, expr+["+"+str(curr_val)]) 
                         # subtraction (notice the minus sign to handle cases such as 1 - 10 * 5) 
                         dfs(j+1, val-curr_val, -curr_val, expr+["-"+str(curr_val)])
-                     # this is the handle cases such as "205", where 05 is not a valid operand 
+                     # this handles cases such as "205", where 05 is not a valid operand 
                     if num[index] == '0': 
                         break 
 
